@@ -404,6 +404,13 @@ body {
   z-index: 21;
   position: relative;
   top: 50px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.label .cover-wrapper:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .label .cover-wrapper-big {
@@ -415,6 +422,13 @@ body {
   z-index: 21;
   position: relative;
   top: 115px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.label .cover-wrapper-big:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
 }
 
 .label a, .label a:focus, .label a:hover {

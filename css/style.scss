@@ -404,6 +404,12 @@ body {
     z-index: 21;
     position: relative;
     top: 50px;
+    transition: all 0.2s;
+
+    &:hover{
+      transform: scale(1.2);
+      // background:rgba(241, 104, 118, .70);
+    }
 }
 .cover-wrapper-big {
     font-size: 18px + 5.5;
@@ -414,6 +420,12 @@ body {
     z-index: 21;
     position: relative;
     top: 115px;
+    transition: all 0.2s;
+
+    &:hover{
+      transform: scale(1.4);
+      // background:rgba(241, 104, 118, .70);
+    }
 }
 a, a:focus, a:hover {
     text-decoration: none;
