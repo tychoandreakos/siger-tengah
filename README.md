@@ -7,7 +7,7 @@ Web Design adalah jenis desain grafis yang ditujukan untuk pengembangan dan styl
 
 Berikut desain mockup dari siger tengah :
 
-![Desain Landing Page Siger Tengah](https://www.petanikode.com/img/markdown/markdown-vscode.png)
+![Desain Landing Page Siger Tengah](https://imgbbb.com/images/2019/03/21/Screenshot-50.png)
 
 ### Tool yang digunakan :
 
