@@ -20,7 +20,7 @@ Berikut desain mockup dari siger tengah :
 7. [Color Scheme](https://coolors.co/)
 8. [Font Awesome](https://www.bootstrapcdn.com/fontawesome/)
 9. [Google Font](https://fonts.google.com)
-10. [Owl Carouel](https://owlcarousel2.github.io/OwlCarousel2/)
+10. [Owl Carosuel](https://owlcarousel2.github.io/OwlCarousel2/)
 
 ### Plugin Visual Studio Code Yang Digunakan
 1. [Live Reload](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsls-vs)
