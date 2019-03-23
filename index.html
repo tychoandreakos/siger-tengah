@@ -7,11 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Hello, world!</title>
@@ -19,46 +16,63 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="images/logo.png" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="float-panel" data-top="0" data-scroll="500">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
 
-          <!-- search -->
-          <div class="search">
-            <input type="text" placeholder="Cari Berdasarkan Seniman, Karya Seni, Lain - lain" class="search-box">
-          </div>
+            <!-- search -->
+            <div class="search">
+              <i class="fa fa-search"></i>
+              <input type="text" placeholder="Cari Berdasarkan Seniman, Karya Seni, Lain - lain" class="search-box">
+            </div>
 
-          <ul class="navbar-nav ml-3">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Karya Seni <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pameran Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Lelang Karya Seni</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">More</a>
-            </li>
+            <ul class="navbar-nav ml-3">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Karya Seni <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pameran Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Lelang Karya Seni</a>
+              </li>
+              <li class="nav-item">
+                  <div class="cont">
+                <a class="nav-link dropdown-btn" id="dropdown" href="#">More</a>
+                 <svg viewBox='0 0 20 20' class='svg' preserveAspectRatio='none'>
+    <path class='svg__arrow' d='M2,6.2 h16' stroke='#fff' stroke-width='1'></path>
+    <path class='svg__arrow svg__arrow--main' d='M2,6.2 l8,3 l8,-3' fill='#fff' stroke-linejoin='round' stroke-width='1' stroke='#fff'></path>
+    <path class='svg__cross' d='M4,-5 l12,4.5 m0,-4.5 l-12,4.5' fill='none' stroke-width='1.2' stroke='#fff'></path>
+  </svg>
+  <div class="contans">
+  <ul class="list" aria-labelledby="dropdown" role="menu" aria-hidden="true">
+    <li class="list-item"><a href="#" class="list-item__link" role="menuitem">Event</a></li>
+    <li class="list-item"><a href="#" class="list-item__link" role="menuitem">Seniman</a></li>
+    <li class="list-item"><a href="#" class="list-item__link" role="menuitem">About Us</a></li>
+  </ul>
+  </div>
+</div>
+              </li>
 
-          </ul>
+            </ul>
 
-          <!-- button-auth -->
-          <div class="button-auth ml-auto">
-            <a href="" class="btn btn-masuk">Masuk</a>
-            <a href="" class="btn btn-daftar">Daftar</a>
+            <!-- button-auth -->
+            <div class="button-auth ml-auto">
+              <button data-toggle="modal" data-target="#Modal-login" class="btn btn-masuk">Masuk</button>
+              <a href="" class="btn btn-daftar">Daftar</a>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
 
 
     <!-- slider -->
@@ -70,7 +84,7 @@
           <div class="content">
             <div class="container">
               <div class="col-md-6 caption text-darks">
-                <h1 style="font-size: 2.8em">Kenal Lebih Dekat Dengan SIGER TENGAH
+                <h1 style="font-size: 2.8em;font-weight: normal">Kenal Lebih Dekat Dengan SIGER TENGAH
                   Kenal Lebih Dekat Dengan
                   Seniman Favoritmu. </h1>
                 <p>- Temukan Karya Seni Terbaik Disini.</p>
@@ -116,7 +130,7 @@
           <div class="fame">
             <div class="row">
               <div class="col-md-4">
-                <img src="images/romantic-floral-badge_53876-77014.jpg" alt="">
+                <img src="images/karya-seni-terbaik.jpg">
               </div>
 
               <div class="col-md-8">
@@ -133,7 +147,7 @@
           <div class="fame">
             <div class="row">
               <div class="col-md-4">
-                <img src="images/romantic-floral-badge_53876-77014.jpg" alt="">
+                <img src="images/kujang.jpg" alt="karya-seni-terbaik">
               </div>
 
               <div class="col-md-8">
@@ -149,7 +163,7 @@
           <div class="fame">
             <div class="row">
               <div class="col-md-4">
-                <img src="images/romantic-floral-badge_53876-77014.jpg" alt="">
+                <img src="images/seniman.jpg" alt="">
               </div>
 
               <div class="col-md-8">
@@ -169,40 +183,41 @@
   <content>
     <div class="container">
       <div class="label">
-        <h2>Cari Karya Seni</h2>
         <div class="row">
+          <div class="col-md-3">
+            <h2>Cari Karya Seni</h2>
+          </div>
+          <div class="col-md-9">
+            <p><a href="">View All Label</a></p>
+            <div class="separator"></div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
           <div class="col-md-4">
-            <div
-              style="background-image: url(https://img.staticbg.com/thumb/large/oaupload/banggood/images/21/AC/957be129-2d21-4a82-b981-50d71ae1e0bf.jpeg);"
-              class="image-grid-cover-big">
+            <div style="background-image: url(images/label/lukisan.jpeg);" class="image-grid-cover-big">
               <a href="#" class="image-grid-clickbox"></a>
               <a href="#" class="cover-wrapper-big">Lukisan</a>
             </div>
           </div>
           <div class="col-md-4">
-            <div style="background-image: url(http://saranankri.com/wp-content/uploads/2018/08/kujang-sunda.jpg);"
-              class="image-grid-cover">
+            <div style="background-image: url(images/label/antik.jpg);" class="image-grid-cover">
               <a href="#" class="image-grid-clickbox"></a>
               <a href="#" class="cover-wrapper">Barang Antik</a>
             </div>
 
-            <div
-              style="background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4cf3b017-f651-4f0b-bf43-436623e1e0cb/d6unz1f-bd95d526-794d-4284-b104-d3ec92a073ea.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRjZjNiMDE3LWY2NTEtNGYwYi1iZjQzLTQzNjYyM2UxZTBjYlwvZDZ1bnoxZi1iZDk1ZDUyNi03OTRkLTQyODQtYjEwNC1kM2VjOTJhMDczZWEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.RgWfz4GBlZdWhMA1r6QBH8cY7EO7hnA9eo538xCxSO8);"
-              class="image-grid-cover">
+            <div style="background-image: url(images/label/wayag.jpg);" class="image-grid-cover">
               <a href="#" class="image-grid-clickbox"></a>
               <a href="#" class="cover-wrapper">Wayang</a>
             </div>
           </div>
           <div class="col-md-4">
-            <div
-              style="background-image: url(https://carajuki.com/junkies/wp-content/uploads/2015/05/motif-ukiran.jpg);"
-              class="image-grid-cover">
+            <div style="background-image: url(images/label/ukuran.jpg);" class="image-grid-cover">
               <a href="#" class="image-grid-clickbox"></a>
               <a href="#" class="cover-wrapper">Ukiran</a>
             </div>
 
-            <div style="background-image: url(https://bfinews.com/resource/20160530-hokky-ilustrasigorga.jpg);"
-              class="image-grid-cover">
+            <div style="background-image: url(images/label/lain.jpg);" class="image-grid-cover">
               <a href="#" class="image-grid-clickbox"></a>
               <a href="#" class="cover-wrapper">Lain - lain</a>
             </div>
@@ -210,33 +225,123 @@
         </div>
       </div>
 
+
+
+
+      <!-- karya seniman -->
+
       <div class="content-box">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-4">
             <h2>Hasil Karya Seniman</h2>
           </div>
-          <div class="col-md-9">
+          <div class="col-md-8">
             <p><a href="">View All</a></p>
             <div class="separator"></div>
           </div>
         </div>
       </div>
-
-      <div class="slider-content mt-5">
+      <div class="slider-content mt-4">
         <div id="owl-slider" class="owl-slider" class="owl-carousel">
-          <div><img src="https://i.pinimg.com/originals/db/bb/1d/dbbb1d0daff943bcb104b1650811b68d.jpg" alt=""></div>
-          <div><img
-              src="https://perpustakaanbersama.files.wordpress.com/2011/03/wanita_indonesia_lukisan_soekarno_wikipedia.jpg"
-              alt=""></div>
-          <div><img src="https://s1.bukalapak.com/img/694105931/w-1000/54.jpg" alt=""></div>
-          <div><img
-              src="https://s.kaskus.id/r480x480/images/fjb/2016/01/10/koleksi_lukisan_karya_seniman_indonesia_2503755_1452423834.jpg"
-              alt=""></div>
-          <div><img src="http://3.bp.blogspot.com/-vECjU3IS7d4/UV-jCyfP9ZI/AAAAAAAAAjg/HFD_lOiVj7M/s1600/4hasil.jpg"
-              alt=""></div>
-          <div><img src="http://www.tubanjogja.org/wp-content/uploads/2018/01/karya-affandi.jpg" alt=""></div>
+          <div>
+            <div class="button-love">
+              <form action="" method="post" class="lover" onsubmit="">
+                <!--<input type="submit" class="button-love-submit" value=""/>-->
+                <i class="button-love-heart fa fa-heart"></i>
+                <i class="button-love-plus fa fa-plus"></i>
+              </form>
+            </div>
+            <a href="#"><img src="images/hasil-karya-seniman/1.jpg" alt="karya-seniman"></a>
+            <div class="desc-slider">
+              <p>Abdul Mutakin</p>
+              <span>Penari Indonesia Khas Minangkabau</span>
+              <a href="">Kontak Seniman</a>
+            </div>
+          </div>
+          <div>
+            <div class="button-love">
+              <form action="" method="post" class="lover" onsubmit="">
+                <!--<input type="submit" class="button-love-submit" value=""/>-->
+                <i class="button-love-heart fa fa-heart"></i>
+                <i class="button-love-plus fa fa-plus"></i>
+              </form>
+            </div>
+            <a href="#"><img src="images/hasil-karya-seniman/2.jpg" alt="karya-seniman"></a>
+            <div class="desc-slider">
+              <p>Abdul Mutakin</p>
+              <span>Penari Indonesia Khas Minangkabau</span>
+              <a href="">Kontak Seniman</a>
+            </div>
+          </div>
+          <div>
+            <div class="button-love">
+              <form action="" method="post" class="lover" onsubmit="">
+                <!--<input type="submit" class="button-love-submit" value=""/>-->
+                <i class="button-love-heart fa fa-heart"></i>
+                <i class="button-love-plus fa fa-plus"></i>
+              </form>
+            </div>
+            <a href="#"><img src="images/hasil-karya-seniman/3.jpg" alt="karya-seniman"></a>
+            <div class="desc-slider">
+              <p>Abdul Mutakin</p>
+              <span>Penari Indonesia Khas Minangkabau</span>
+              <a href="">Kontak Seniman</a>
+            </div>
+          </div>
+          <div>
+            <div class="button-love">
+              <form action="" method="post" class="lover" onsubmit="">
+                <!--<input type="submit" class="button-love-submit" value=""/>-->
+                <i class="button-love-heart fa fa-heart"></i>
+                <i class="button-love-plus fa fa-plus"></i>
+              </form>
+            </div>
+            <a href="#"><img src="images/hasil-karya-seniman/4.jpg" alt="karya-seniman"></a>
+            <div class="desc-slider">
+              <p>Abdul Mutakin</p>
+              <span>Penari Indonesia Khas Minangkabau</span>
+              <a href="">Kontak Seniman</a>
+            </div>
+          </div>
+          <div>
+            <div class="button-love">
+              <form action="" method="post" class="lover" onsubmit="">
+                <!--<input type="submit" class="button-love-submit" value=""/>-->
+                <i class="button-love-heart fa fa-heart"></i>
+                <i class="button-love-plus fa fa-plus"></i>
+              </form>
+            </div>
+            <a href="#"><img src="images/hasil-karya-seniman/5.jpg" alt="karya-seniman"></a>
+            <div class="desc-slider">
+              <p>Abdul Mutakin</p>
+              <span>Penari Indonesia Khas Minangkabau</span>
+              <a href="">Kontak Seniman</a>
+            </div>
+          </div>
+          <div>
+            <div class="button-love">
+              <form action="" method="post" class="lover" onsubmit="">
+                <!--<input type="submit" class="button-love-submit" value=""/>-->
+                <i class="button-love-heart fa fa-heart"></i>
+                <i class="button-love-plus fa fa-plus"></i>
+              </form>
+            </div>
+            <a href="#"><img src="images/hasil-karya-seniman/6.jpg" alt="karya-seniman"></a>
+            <div class="desc-slider">
+              <p>Abdul Mutakin</p>
+              <span>Penari Indonesia Khas Minangkabau</span>
+              <a href="">Kontak Seniman</a>
+            </div>
+          </div>
         </div>
+
+
       </div>
+
+
+
+
+      <!-- lelang content -->
 
       <div class="content-box" style="margin-top: 60px">
         <div class="row">
@@ -250,28 +355,366 @@
         </div>
       </div>
 
-      <div class="slider-content mt-5">
+      <div class="slider-content mt-4">
         <div id="owl-slider" class="owl-slider" class="owl-carousel">
-          <div><img src="https://i.pinimg.com/originals/db/bb/1d/dbbb1d0daff943bcb104b1650811b68d.jpg" alt=""></div>
-          <div><img
-              src="https://perpustakaanbersama.files.wordpress.com/2011/03/wanita_indonesia_lukisan_soekarno_wikipedia.jpg"
-              alt=""></div>
-          <div><img src="https://s1.bukalapak.com/img/694105931/w-1000/54.jpg" alt=""></div>
-          <div><img
-              src="https://s.kaskus.id/r480x480/images/fjb/2016/01/10/koleksi_lukisan_karya_seniman_indonesia_2503755_1452423834.jpg"
-              alt=""></div>
-          <div><img src="http://3.bp.blogspot.com/-vECjU3IS7d4/UV-jCyfP9ZI/AAAAAAAAAjg/HFD_lOiVj7M/s1600/4hasil.jpg"
-              alt=""></div>
-          <div><img src="http://www.tubanjogja.org/wp-content/uploads/2018/01/karya-affandi.jpg" alt=""></div>
+          <div><a href="#"><img src="images/lelang-image/1.jpg" alt="lelang"></a>
+            <div class="lelang-content">
+              <div class="row">
+                <div class="col-md-9">
+                  <p><a href="#">Dua Patung Burung Satu2</a></p>
+                </div>
+                <div class="col-md-3">
+                  <div class="lelang-button-love">
+                    <div class="button-love">
+                      <form action="" method="post" class="lover" onsubmit="">
+                        <!--<input type="submit" class="button-love-submit" value=""/>-->
+                        <i class="button-love-heart fa fa-heart"></i>
+                        <i class="button-love-plus fa fa-plus"></i>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="">Tendi Hidayat</a>
+              <div class="row">
+                <div class="col-md-6"><span>RP. 200.000</span></div>
+                <div class="col-md-6"><span class="bid float-right"><i class="fa fa-gavel"></i> 0 Bids</span></div>
+              </div>
+            </div>
+          </div>
+          <div><a href="#"><img src="images/lelang-image/2.jpg" alt="lelang"></a>
+            <div class="lelang-content">
+              <div class="row">
+                <div class="col-md-9">
+                  <p><a href="#">Dua Patung Burung Satu</a></p>
+                </div>
+                <div class="col-md-3">
+                  <div class="lelang-button-love">
+                    <div class="button-love">
+                      <form action="" method="post" class="lover" onsubmit="">
+                        <!--<input type="submit" class="button-love-submit" value=""/>-->
+                        <i class="button-love-heart fa fa-heart"></i>
+                        <i class="button-love-plus fa fa-plus"></i>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="">Tendi Hidayat</a>
+              <div class="row">
+                <div class="col-md-6"><span>RP. 200.000</span></div>
+                <div class="col-md-6"><span class="bid float-right"><i class="fa fa-gavel"></i> 0 Bids</span></div>
+              </div>
+            </div>
+          </div>
+          <div><a href="#"><img src="images/lelang-image/3.jpg" alt="lelang"></a>
+            <div class="lelang-content">
+              <div class="row">
+                <div class="col-md-9">
+                  <p><a href="#">Dua Patung Burung Satu</a></p>
+                </div>
+                <div class="col-md-3">
+                  <div class="lelang-button-love">
+                    <div class="button-love">
+                      <form action="" method="post" class="lover" onsubmit="">
+                        <!--<input type="submit" class="button-love-submit" value=""/>-->
+                        <i class="button-love-heart fa fa-heart"></i>
+                        <i class="button-love-plus fa fa-plus"></i>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="">Tendi Hidayat</a>
+              <div class="row">
+                <div class="col-md-6"><span>RP. 200.000</span></div>
+                <div class="col-md-6"><span class="bid float-right"><i class="fa fa-gavel"></i> 0 Bids</span></div>
+              </div>
+            </div>
+          </div>
+          <div><a href="#"><img src="images/lelang-image/4.jpg" alt="lelang"></a>
+            <div class="lelang-content">
+              <div class="row">
+                <div class="col-md-9">
+                  <p><a href="#">Dua Patung Burung Satu</a></p>
+                </div>
+                <div class="col-md-3">
+                  <div class="lelang-button-love">
+                    <div class="button-love">
+                      <form action="" method="post" class="lover" onsubmit="">
+                        <!--<input type="submit" class="button-love-submit" value=""/>-->
+                        <i class="button-love-heart fa fa-heart"></i>
+                        <i class="button-love-plus fa fa-plus"></i>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="">Tendi Hidayat</a>
+              <div class="row">
+                <div class="col-md-6"><span>RP. 200.000</span></div>
+                <div class="col-md-6"><span class="bid float-right"><i class="fa fa-gavel"></i> 0 Bids</span></div>
+              </div>
+            </div>
+        </div>
+        <div><a href="#"><img src="images/lelang-image/5.jpg" alt="lelang"></a>
+          <div class="lelang-content">
+            <div class="row">
+              <div class="col-md-9">
+                <p><a href="#">Dua Patung Burung Satu</a></p>
+              </div>
+              <div class="col-md-3">
+                <div class="lelang-button-love">
+                  <div class="button-love">
+                    <form action="" method="post" class="lover" onsubmit="">
+                      <!--<input type="submit" class="button-love-submit" value=""/>-->
+                      <i class="button-love-heart fa fa-heart"></i>
+                      <i class="button-love-plus fa fa-plus"></i>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="">Tendi Hidayat</a>
+            <div class="row">
+              <div class="col-md-6"><span>RP. 200.000</span></div>
+              <div class="col-md-6"><span class="bid float-right"><i class="fa fa-gavel"></i> 0 Bids</span></div>
+            </div>
+          </div>
+        </div>
+        <div><a href="#"><img src="images/lelang-image/6.jpg" alt="lelang"></a>
+          <div class="lelang-content">
+            <div class="row">
+              <div class="col-md-9">
+                <p><a href="#">Dua Patung Burung Satu</a></p>
+              </div>
+              <div class="col-md-3">
+                <div class="lelang-button-love">
+                  <div class="button-love">
+                    <form action="" method="post" class="lover" onsubmit="">
+                      <!--<input type="submit" class="button-love-submit" value=""/>-->
+                      <i class="button-love-heart fa fa-heart"></i>
+                      <i class="button-love-plus fa fa-plus"></i>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="">Tendi Hidayat</a>
+            <div class="row">
+              <div class="col-md-6"><span>RP. 200.000</span></div>
+              <div class="col-md-6"><span class="bid float-right"><i class="fa fa-gavel"></i> 0 Bids</span></div>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
 
     </div>
 
+
+
+    <!-- follow seniman -->
+
     <div class="jumbotron jumbotron-fluid mt-5">
       <div class="container">
-        <h1 class="display-4">Fluid jumbotron</h1>
-        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        <h1 class="display-5">Follow Seniman</h1>
+        <div class="seniman-box mt-3">
+            <div class="mhn-slide owl-carousel">
+                <div class="mhn-item">
+                    <div class="mhn-inner"><img src="images/barang-antik/1.jpg" />
+                        <div class="mhn-img">
+                            <div class="loader-circle">
+                                <div class="loader-stroke-left"></div>
+                                <div class="loader-stroke-right"></div>
+                            </div>
+                        </div>
+                        <div class="mhn-text">
+                            <h4>Denny Wanarko</h4>
+                            <p>Bandung, 20 Maret 1998</p>
+                            <span>50 Karya 20 Terjual</span>
+                            <a href="" class="btn btn-follow">Follow</a>
+                          </div>
+                    </div>
+                </div>
+                <div class="mhn-item">
+                    <div class="mhn-inner"><img src="images/barang-antik/1.jpg" />
+                        <div class="mhn-img">
+                            <div class="loader-circle">
+                                <div class="loader-stroke-left"></div>
+                                <div class="loader-stroke-right"></div>
+                            </div>
+                        </div>
+                        <div class="mhn-text">
+                            <h4>Denny Wanarko</h4>
+                            <p>Bandung, 20 Maret 1998</p>
+                            <span>50 Karya 20 Terjual</span>
+                            <a href="" class="btn btn-follow">Follow</a>
+                          </div>
+                    </div>
+                </div>
+                <div class="mhn-item">
+                    <div class="mhn-inner"><img src="images/barang-antik/1.jpg" />
+                        <div class="mhn-img">
+                            <div class="loader-circle">
+                                <div class="loader-stroke-left"></div>
+                                <div class="loader-stroke-right"></div>
+                            </div>
+                        </div>
+                        <div class="mhn-text">
+                            <h4>Denny Wanarko</h4>
+                            <p>Bandung, 20 Maret 1998</p>
+                            <span>50 Karya 20 Terjual</span>
+                            <a href="" class="btn btn-follow">Follow</a>
+                          </div>
+                    </div>
+                </div>
+                <div class="mhn-item">
+                    <div class="mhn-inner"><img src="images/barang-antik/1.jpg" />
+                        <div class="mhn-img">
+                            <div class="loader-circle">
+                                <div class="loader-stroke-left"></div>
+                                <div class="loader-stroke-right"></div>
+                            </div>
+                        </div>
+                        <div class="mhn-text">
+                            <h4>Denny Wanarko</h4>
+                            <p>Bandung, 20 Maret 1998</p>
+                            <span>50 Karya 20 Terjual</span>
+                            <a href="" class="btn btn-follow">Follow</a>
+                          </div>
+                    </div>
+                </div>
+                <div class="mhn-item">
+                    <div class="mhn-inner"><img src="images/barang-antik/1.jpg" />
+                        <div class="mhn-img">
+                            <div class="loader-circle">
+                                <div class="loader-stroke-left"></div>
+                                <div class="loader-stroke-right"></div>
+                            </div>
+                        </div>
+                        <div class="mhn-text">
+                            <h4>Denny Wanarko</h4>
+                            <p>Bandung, 20 Maret 1998</p>
+                            <span>50 Karya 20 Terjual</span>
+                            <a href="" class="btn btn-follow">Follow</a>
+                          </div>
+                    </div>
+                </div>
+                <div class="mhn-item">
+                    <div class="mhn-inner"><img src="images/barang-antik/1.jpg" />
+                        <div class="mhn-img">
+                            <div class="loader-circle">
+                                <div class="loader-stroke-left"></div>
+                                <div class="loader-stroke-right"></div>
+                            </div>
+                        </div>
+                        <div class="mhn-text">
+                            <h4>Denny Wanarko</h4>
+                            <p>Bandung, 20 Maret 1998</p>
+                            <span>50 Karya 20 Terjual</span>
+                            <a href="" class="btn btn-follow">Follow</a>
+                          </div>
+                    </div>
+                </div>
+                <div class="mhn-item">
+                    <div class="mhn-inner"><img src="images/barang-antik/1.jpg" />
+                        <div class="mhn-img">
+                            <div class="loader-circle">
+                                <div class="loader-stroke-left"></div>
+                                <div class="loader-stroke-right"></div>
+                            </div>
+                        </div>
+                        <div class="mhn-text">
+                            <h4>Denny Wanarko</h4>
+                            <p>Bandung, 20 Maret 1998</p>
+                            <span>50 Karya 20 Terjual</span>
+                            <a href="" class="btn btn-follow">Follow</a>
+                          </div>
+                    </div>
+                </div>
+                <div class="mhn-item">
+                    <div class="mhn-inner"><img src="images/barang-antik/1.jpg" />
+                        <div class="mhn-img">
+                            <div class="loader-circle">
+                                <div class="loader-stroke-left"></div>
+                                <div class="loader-stroke-right"></div>
+                            </div>
+                        </div>
+                        <div class="mhn-text">
+                            <h4>Denny Wanarko</h4>
+                            <p>Bandung, 20 Maret 1998</p>
+                            <span>50 Karya 20 Terjual</span>
+                            <a href="" class="btn btn-follow">Follow</a>
+                          </div>
+                    </div>
+                </div>
+                <div class="mhn-item">
+                    <div class="mhn-inner"><img src="images/barang-antik/1.jpg" />
+                        <div class="mhn-img">
+                            <div class="loader-circle">
+                                <div class="loader-stroke-left"></div>
+                                <div class="loader-stroke-right"></div>
+                            </div>
+                        </div>
+                        <div class="mhn-text">
+                            <h4>Denny Wanarko</h4>
+                            <p>Bandung, 20 Maret 1998</p>
+                            <span>50 Karya 20 Terjual</span>
+                            <a href="" class="btn btn-follow">Follow</a>
+                          </div>
+                    </div>
+                </div>
+                <div class="mhn-item">
+                    <div class="mhn-item">
+                        <div class="mhn-inner"><img src="images/barang-antik/1.jpg" />
+                            <div class="mhn-img">
+                                <div class="loader-circle">
+                                    <div class="loader-stroke-left"></div>
+                                    <div class="loader-stroke-right"></div>
+                                </div>
+                            </div>
+                            <div class="mhn-text">
+                                <h4>Denny Wanarko</h4>
+                                <p>Bandung, 20 Maret 1998</p>
+                                <span>50 Karya 20 Terjual</span>
+                                <a href="" class="btn btn-follow">Follow</a>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="mhn-item">
+                        <div class="mhn-inner"><img src="images/barang-antik/1.jpg" />
+                            <div class="mhn-img">
+                                <div class="loader-circle">
+                                    <div class="loader-stroke-left"></div>
+                                    <div class="loader-stroke-right"></div>
+                                </div>
+                            </div>
+                            <div class="mhn-text">
+                                <h4>Denny Wanarko</h4>
+                                <p>Bandung, 20 Maret 1998</p>
+                                <span>50 Karya 20 Terjual</span>
+                                <a href="" class="btn btn-follow">Follow</a>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="mhn-item">
+                        <div class="mhn-inner"><img src="images/barang-antik/1.jpg" />
+                            <div class="mhn-img">
+                                <div class="loader-circle">
+                                    <div class="loader-stroke-left"></div>
+                                    <div class="loader-stroke-right"></div>
+                                </div>
+                            </div>
+                            <div class="mhn-text">
+                                <h4>Denny Wanarko</h4>
+                                <p>Bandung, 20 Maret 1998</p>
+                                <span>50 Karya 20 Terjual</span>
+                                <a href="" class="btn btn-follow">Follow</a>
+                              </div>
+                        </div>
+                    </div>
+         </div>
       </div>
     </div>
 
@@ -289,20 +732,152 @@
         </div>
       </div>
 
-      <div class="slider-content mt-5">
+      <div class="slider-content mt-4">
         <div id="owl-slider" class="owl-slider" class="owl-carousel">
-          <div><img src="https://i.pinimg.com/originals/db/bb/1d/dbbb1d0daff943bcb104b1650811b68d.jpg" alt=""></div>
-          <div><img
-              src="https://perpustakaanbersama.files.wordpress.com/2011/03/wanita_indonesia_lukisan_soekarno_wikipedia.jpg"
-              alt=""></div>
-          <div><img src="https://s1.bukalapak.com/img/694105931/w-1000/54.jpg" alt=""></div>
-          <div><img
-              src="https://s.kaskus.id/r480x480/images/fjb/2016/01/10/koleksi_lukisan_karya_seniman_indonesia_2503755_1452423834.jpg"
-              alt=""></div>
-          <div><img src="http://3.bp.blogspot.com/-vECjU3IS7d4/UV-jCyfP9ZI/AAAAAAAAAjg/HFD_lOiVj7M/s1600/4hasil.jpg"
-              alt=""></div>
-          <div><img src="http://www.tubanjogja.org/wp-content/uploads/2018/01/karya-affandi.jpg" alt=""></div>
+          <div>
+            <a href="#"><img src="images/karya-seni-patung/1.jpg" alt="seni-patung"></a>
+            <div class="desc-slider">
+              <div class="row">
+                <div class="col-md-9">
+                  <p style="line-height: 30px">Abdul Mutakin</p>
+                </div>
+                <div class="col-md-3">
+                  <div class="love-button-cover">
+                    <div class="button-love">
+                      <form action="" method="post" class="lover" onsubmit="">
+                        <!--<input type="submit" class="button-love-submit" value=""/>-->
+                        <i class="button-love-heart fa fa-heart"></i>
+                        <i class="button-love-plus fa fa-plus"></i>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span>Penari Indonesia Khas Minangkabau</span>
+              <a href="">Kontak Seniman</a>
+            </div>
+          </div>
+          <div>
+            <a href="#"><img src="images/karya-seni-patung/2.jpg" alt="seni-patung"></a>
+            <div class="desc-slider">
+              <div class="row">
+                <div class="col-md-9">
+                  <p style="line-height: 30px">Abdul Mutakin</p>
+                </div>
+                <div class="col-md-3">
+                  <div class="love-button-cover">
+                    <div class="button-love">
+                      <form action="" method="post" class="lover" onsubmit="">
+                        <!--<input type="submit" class="button-love-submit" value=""/>-->
+                        <i class="button-love-heart fa fa-heart"></i>
+                        <i class="button-love-plus fa fa-plus"></i>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <span>Penari Indonesia Khas Minangkabau</span>
+              <a href="">Kontak Seniman</a>
+            </div>
+          </div>
+          <div>
+
+            <a href="#"><img src="images/karya-seni-patung/3.jpg" alt="seni-patung"></a>
+            <div class="desc-slider">
+              <div class="row">
+                <div class="col-md-9">
+                  <p style="line-height: 30px">Abdul Mutakin</p>
+                </div>
+                <div class="col-md-3">
+                  <div class="love-button-cover">
+                    <div class="button-love">
+                      <form action="" method="post" class="lover" onsubmit="">
+                        <!--<input type="submit" class="button-love-submit" value=""/>-->
+                        <i class="button-love-heart fa fa-heart"></i>
+                        <i class="button-love-plus fa fa-plus"></i>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span>Penari Indonesia Khas Minangkabau</span>
+              <a href="">Kontak Seniman</a>
+            </div>
+          </div>
+          <div>
+            <a href="#"><img src="images/karya-seni-patung/4.jpg" alt="seni-patung"></a>
+            <div class="desc-slider">
+              <div class="row">
+                <div class="col-md-9">
+                  <p style="line-height: 30px">Abdul Mutakin</p>
+                </div>
+                <div class="col-md-3">
+                  <div class="love-button-cover">
+                    <div class="button-love">
+                      <form action="" method="post" class="lover" onsubmit="">
+                        <!--<input type="submit" class="button-love-submit" value=""/>-->
+                        <i class="button-love-heart fa fa-heart"></i>
+                        <i class="button-love-plus fa fa-plus"></i>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span>Penari Indonesia Khas Minangkabau</span>
+              <a href="">Kontak Seniman</a>
+            </div>
+          </div>
+          <div>
+
+            <a href="#"><img src="images/karya-seni-patung/5.jpg" alt="seni-patung"></a>
+            <div class="desc-slider">
+              <div class="row">
+                <div class="col-md-9">
+                  <p style="line-height: 30px">Abdul Mutakin</p>
+                </div>
+                <div class="col-md-3">
+                  <div class="love-button-cover">
+                    <div class="button-love">
+                      <form action="" method="post" class="lover" onsubmit="">
+                        <!--<input type="submit" class="button-love-submit" value=""/>-->
+                        <i class="button-love-heart fa fa-heart"></i>
+                        <i class="button-love-plus fa fa-plus"></i>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span>Penari Indonesia Khas Minangkabau</span>
+              <a href="">Kontak Seniman</a>
+            </div>
+          </div>
+          <div>
+
+            <a href="#"><img src="images/karya-seni-patung/6.jpg" alt="seni-patung"></a>
+            <div class="desc-slider">
+              <div class="row">
+                <div class="col-md-9">
+                  <p style="line-height: 30px">Abdul Mutakin</p>
+                </div>
+                <div class="col-md-3">
+                  <div class="love-button-cover">
+                    <div class="button-love">
+                      <form action="" method="post" class="lover" onsubmit="">
+                        <!--<input type="submit" class="button-love-submit" value=""/>-->
+                        <i class="button-love-heart fa fa-heart"></i>
+                        <i class="button-love-plus fa fa-plus"></i>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span>Penari Indonesia Khas Minangkabau</span>
+              <a href="">Kontak Seniman</a>
+            </div>
+          </div>
         </div>
+
       </div>
 
       <div class="content-box" style="margin-top: 60px">
@@ -318,53 +893,314 @@
         </div>
       </div>
 
-      <div class="slider-content mt-5">
+      <div class="slider-content mt-4">
         <div id="owl-slider" class="owl-slider" class="owl-carousel">
-          <div><img src="https://i.pinimg.com/originals/db/bb/1d/dbbb1d0daff943bcb104b1650811b68d.jpg" alt=""></div>
-          <div><img
-              src="https://perpustakaanbersama.files.wordpress.com/2011/03/wanita_indonesia_lukisan_soekarno_wikipedia.jpg"
-              alt=""></div>
-          <div><img src="https://s1.bukalapak.com/img/694105931/w-1000/54.jpg" alt=""></div>
-          <div><img
-              src="https://s.kaskus.id/r480x480/images/fjb/2016/01/10/koleksi_lukisan_karya_seniman_indonesia_2503755_1452423834.jpg"
-              alt=""></div>
-          <div><img src="http://3.bp.blogspot.com/-vECjU3IS7d4/UV-jCyfP9ZI/AAAAAAAAAjg/HFD_lOiVj7M/s1600/4hasil.jpg"
-              alt=""></div>
-          <div><img src="http://www.tubanjogja.org/wp-content/uploads/2018/01/karya-affandi.jpg" alt=""></div>
+          <div>
+            <img src="images/karya-seni-lukisan/1.JPG" alt="">
+            <div class="desc-slider">
+              <div class="row">
+                <div class="col-md-9">
+                  <p style="line-height: 30px">Abdul Mutakin</p>
+                </div>
+                <div class="col-md-3">
+                  <div class="love-button-cover">
+                    <div class="button-love">
+                      <form action="" method="post" class="lover" onsubmit="">
+                        <!--<input type="submit" class="button-love-submit" value=""/>-->
+                        <i class="button-love-heart fa fa-heart"></i>
+                        <i class="button-love-plus fa fa-plus"></i>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span>Penari Indonesia Khas Minangkabau</span>
+              <a href="">Kontak Seniman</a>
+            </div>
+          </div>
+          <div>
+            <img src="images/karya-seni-lukisan/2.JPG" alt="">
+            <div class="desc-slider">
+              <div class="row">
+                <div class="col-md-9">
+                  <p style="line-height: 30px">Abdul Mutakin</p>
+                </div>
+                <div class="col-md-3">
+                  <div class="love-button-cover">
+                    <div class="button-love">
+                      <form action="" method="post" class="lover" onsubmit="">
+                        <!--<input type="submit" class="button-love-submit" value=""/>-->
+                        <i class="button-love-heart fa fa-heart"></i>
+                        <i class="button-love-plus fa fa-plus"></i>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <span>Penari Indonesia Khas Minangkabau</span>
+              <a href="">Kontak Seniman</a>
+            </div>
+          </div>
+          <div>
+
+            <img src="images/karya-seni-lukisan/3.JPG" alt="">
+            <div class="desc-slider">
+              <div class="row">
+                <div class="col-md-9">
+                  <p style="line-height: 30px">Abdul Mutakin</p>
+                </div>
+                <div class="col-md-3">
+                  <div class="love-button-cover">
+                    <div class="button-love">
+                      <form action="" method="post" class="lover" onsubmit="">
+                        <!--<input type="submit" class="button-love-submit" value=""/>-->
+                        <i class="button-love-heart fa fa-heart"></i>
+                        <i class="button-love-plus fa fa-plus"></i>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span>Penari Indonesia Khas Minangkabau</span>
+              <a href="">Kontak Seniman</a>
+            </div>
+          </div>
+          <div>
+            <img src="images/karya-seni-lukisan/4.JPG" alt="">
+            <div class="desc-slider">
+              <div class="row">
+                <div class="col-md-9">
+                  <p style="line-height: 30px">Abdul Mutakin</p>
+                </div>
+                <div class="col-md-3">
+                  <div class="love-button-cover">
+                    <div class="button-love">
+                      <form action="" method="post" class="lover" onsubmit="">
+                        <!--<input type="submit" class="button-love-submit" value=""/>-->
+                        <i class="button-love-heart fa fa-heart"></i>
+                        <i class="button-love-plus fa fa-plus"></i>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span>Penari Indonesia Khas Minangkabau</span>
+              <a href="">Kontak Seniman</a>
+            </div>
+          </div>
+          <div>
+
+            <img src="images/karya-seni-lukisan/5.JPG" alt="">
+            <div class="desc-slider">
+              <div class="row">
+                <div class="col-md-9">
+                  <p style="line-height: 30px">Abdul Mutakin</p>
+                </div>
+                <div class="col-md-3">
+                  <div class="love-button-cover">
+                    <div class="button-love">
+                      <form action="" method="post" class="lover" onsubmit="">
+                        <!--<input type="submit" class="button-love-submit" value=""/>-->
+                        <i class="button-love-heart fa fa-heart"></i>
+                        <i class="button-love-plus fa fa-plus"></i>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span>Penari Indonesia Khas Minangkabau</span>
+              <a href="">Kontak Seniman</a>
+            </div>
+          </div>
+          <div>
+
+            <img src="images/karya-seni-lukisan/6.JPG" alt="">
+            <div class="desc-slider">
+              <div class="row">
+                <div class="col-md-9">
+                  <p style="line-height: 30px">Abdul Mutakin</p>
+                </div>
+                <div class="col-md-3">
+                  <div class="love-button-cover">
+                    <div class="button-love">
+                      <form action="" method="post" class="lover" onsubmit="">
+                        <!--<input type="submit" class="button-love-submit" value=""/>-->
+                        <i class="button-love-heart fa fa-heart"></i>
+                        <i class="button-love-plus fa fa-plus"></i>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span>Penari Indonesia Khas Minangkabau</span>
+              <a href="">Kontak Seniman</a>
+            </div>
+          </div>
         </div>
+
       </div>
 
       <div class="content-box" style="margin-top: 60px">
-          <div class="row">
-            <div class="col-md-3">
-              <span style="display: block">Category</span>
-              <h2>Barang Antik</h2>
-            </div>
-            <div class="col-md-9">
-              <p><a href="">View All</a></p>
-              <div class="separator"></div>
-            </div>
+        <div class="row">
+          <div class="col-md-3">
+            <span style="display: block">Category</span>
+            <h2>Barang Antik</h2>
+          </div>
+          <div class="col-md-9">
+            <p><a href="">View All</a></p>
+            <div class="separator"></div>
           </div>
         </div>
-  
-        <div class="slider-content mt-5">
-          <div id="owl-slider" class="owl-slider" class="owl-carousel">
-            <div><img src="https://i.pinimg.com/originals/db/bb/1d/dbbb1d0daff943bcb104b1650811b68d.jpg" alt=""></div>
-            <div><img
-                src="https://perpustakaanbersama.files.wordpress.com/2011/03/wanita_indonesia_lukisan_soekarno_wikipedia.jpg"
-                alt=""></div>
-            <div><img src="https://s1.bukalapak.com/img/694105931/w-1000/54.jpg" alt=""></div>
-            <div><img
-                src="https://s.kaskus.id/r480x480/images/fjb/2016/01/10/koleksi_lukisan_karya_seniman_indonesia_2503755_1452423834.jpg"
-                alt=""></div>
-            <div><img src="http://3.bp.blogspot.com/-vECjU3IS7d4/UV-jCyfP9ZI/AAAAAAAAAjg/HFD_lOiVj7M/s1600/4hasil.jpg"
-                alt=""></div>
-            <div><img src="http://www.tubanjogja.org/wp-content/uploads/2018/01/karya-affandi.jpg" alt=""></div>
-          </div>
-        </div>
-  
       </div>
-    </div>
+
+      <div class="slider-content mt-4">
+        <div id="owl-slider" class="owl-slider" class="owl-carousel">
+          <div>
+            <img src="images/barang-antik/1.jpg" alt="">
+            <div class="desc-slider">
+              <div class="row">
+                <div class="col-md-9">
+                  <p style="line-height: 30px">Abdul Mutakin</p>
+                </div>
+                <div class="col-md-3">
+                  <div class="love-button-cover">
+                    <div class="button-love">
+                      <form action="" method="post" class="lover" onsubmit="">
+                        <!--<input type="submit" class="button-love-submit" value=""/>-->
+                        <i class="button-love-heart fa fa-heart"></i>
+                        <i class="button-love-plus fa fa-plus"></i>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span>Penari Indonesia Khas Minangkabau</span>
+              <a href="">Kontak Seniman</a>
+            </div>
+          </div>
+          <div>
+            <img src="images/barang-antik/2.jpg" alt="">
+            <div class="desc-slider">
+              <div class="row">
+                <div class="col-md-9">
+                  <p style="line-height: 30px">Abdul Mutakin</p>
+                </div>
+                <div class="col-md-3">
+                  <div class="love-button-cover">
+                    <div class="button-love">
+                      <form action="" method="post" class="lover" onsubmit="">
+                        <!--<input type="submit" class="button-love-submit" value=""/>-->
+                        <i class="button-love-heart fa fa-heart"></i>
+                        <i class="button-love-plus fa fa-plus"></i>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <span>Penari Indonesia Khas Minangkabau</span>
+              <a href="">Kontak Seniman</a>
+            </div>
+          </div>
+          <div>
+
+            <img src="images/barang-antik/3.webp" alt="">
+            <div class="desc-slider">
+              <div class="row">
+                <div class="col-md-9">
+                  <p style="line-height: 30px">Abdul Mutakin</p>
+                </div>
+                <div class="col-md-3">
+                  <div class="love-button-cover">
+                    <div class="button-love">
+                      <form action="" method="post" class="lover" onsubmit="">
+                        <!--<input type="submit" class="button-love-submit" value=""/>-->
+                        <i class="button-love-heart fa fa-heart"></i>
+                        <i class="button-love-plus fa fa-plus"></i>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span>Penari Indonesia Khas Minangkabau</span>
+              <a href="">Kontak Seniman</a>
+            </div>
+          </div>
+          <div>
+            <img src="images/barang-antik/4.jpg" alt="">
+            <div class="desc-slider">
+              <div class="row">
+                <div class="col-md-9">
+                  <p style="line-height: 30px">Abdul Mutakin</p>
+                </div>
+                <div class="col-md-3">
+                  <div class="love-button-cover">
+                    <div class="button-love">
+                      <form action="" method="post" class="lover" onsubmit="">
+                        <!--<input type="submit" class="button-love-submit" value=""/>-->
+                        <i class="button-love-heart fa fa-heart"></i>
+                        <i class="button-love-plus fa fa-plus"></i>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span>Penari Indonesia Khas Minangkabau</span>
+              <a href="">Kontak Seniman</a>
+            </div>
+          </div>
+          <div>
+
+            <img src="images/barang-antik/5.jpg" alt="">
+            <div class="desc-slider">
+              <div class="row">
+                <div class="col-md-9">
+                  <p style="line-height: 30px">Abdul Mutakin</p>
+                </div>
+                <div class="col-md-3">
+                  <div class="love-button-cover">
+                    <div class="button-love">
+                      <form action="" method="post" class="lover" onsubmit="">
+                        <!--<input type="submit" class="button-love-submit" value=""/>-->
+                        <i class="button-love-heart fa fa-heart"></i>
+                        <i class="button-love-plus fa fa-plus"></i>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span>Penari Indonesia Khas Minangkabau</span>
+              <a href="">Kontak Seniman</a>
+            </div>
+          </div>
+          <div>
+
+            <img src="images/barang-antik/6.jpg" alt="">
+            <div class="desc-slider">
+              <div class="row">
+                <div class="col-md-9">
+                  <p style="line-height: 30px">Abdul Mutakin</p>
+                </div>
+                <div class="col-md-3">
+                  <div class="love-button-cover">
+                    <div class="button-love">
+                      <form action="" method="post" class="lover" onsubmit="">
+                        <!--<input type="submit" class="button-love-submit" value=""/>-->
+                        <i class="button-love-heart fa fa-heart"></i>
+                        <i class="button-love-plus fa fa-plus"></i>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span>Penari Indonesia Khas Minangkabau</span>
+              <a href="">Kontak Seniman</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
 
     </div>
 
@@ -373,18 +1209,52 @@
   </content>
 
 
+  <div id="backtop">&#9650;</div>
+
+  <!-- login modal -->
+  <div class="modal" tabindex="-1" role="dialog" id="Modal-login">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Login</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="username">Username</label>
+           <input type="text" id="username" placeholder="Username" class="form-control">
+          </div>
+
+          <div class="form-group">
+              <label for="password">Password</label>
+           <input type="password" id="password" placeholder="Password" class="form-control">
+          </div>
+
+          <div class="float-right">
+            <span><a href="">Lupa Password?</a></span>
+          </div>
+
+          <button class="btn btn-login">Login</button>
+          </div>
+          <div class="modal-footer">
+             
+              <p>Belum Punya Akun? <a href="">Daftar</a></p>  
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/float-panel.js"></script>
+  <script src="js/TweenMax.min.js"></script>
   <script src="js/app.js"></script>
 </body>
 

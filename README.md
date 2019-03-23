@@ -21,23 +21,36 @@ Berikut desain mockup dari siger tengah :
 8. [Font Awesome](https://www.bootstrapcdn.com/fontawesome/)
 9. [Google Font](https://fonts.google.com)
 10. [Owl Carosuel](https://owlcarousel2.github.io/OwlCarousel2/)
+11. [Menucool Animation](http://www.menucool.com)
+12. [TweenMax JS](https://greensock.com/)
 
-### Plugin Visual Studio Code Yang Digunakan
+### Plugin Visual Studio Code Yang Digunakan :
 1. [Live Reload](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsls-vs)
 2. [SASS Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass)
 3. [Beautify](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass)
 
 ### Font Yang Digunakan :
-* Oswald Regular
-* Oswald Light 300
+* Assistant Regular
+* Assistant Light 300
 
-### Depedency Component
+### Warna Yang Digunakan :
+* #000000 - Hitam
+* #ffffff - Putih
+* #f16876 - Froly
+
+### Dependency Component
 1. [SlideShow](https://bootsnipp.com/snippets/X0Qdv)
 2. [Thumbnail Image](https://bootsnipp.com/snippets/0ej)
 3. [Owl Carousel Slider](https://codepen.io/glebkema/pen/GqbWYd)
+4. [Love Button](https://codepen.io/kuus/pen/sqGBd)
+5. [Navbar Animation](http://www.menucool.com/ui/animated-sticky-header-on-scroll)
+6. [BackTop Arrow](http://www.menucool.com/ui/back-to-top-arrow)
+7. [Dropdown Animation](https://codepen.io/indaFaust/pen/awGpQW)
 
 ### Reference
 
 * [Codepen.io](https://codepen.io/)
 * [Bootsnipp](https://bootsnip.com)
+* [Balelang](https://balelang.com)
+* [Menucool](http://www.menucool.com)
 
