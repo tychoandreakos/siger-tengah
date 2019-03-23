@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  height: 500vh;
+  height: 925vh;
   font-family: 'Assistant', sans-serif;
 }
 
@@ -1345,5 +1345,120 @@ body {
 
 .seniman-box .btn-follow:hover {
   background: #f16876;
+}
+
+.event img {
+  width: 100%;
+}
+
+.event .desc-event {
+  padding: 5px;
+}
+
+.event .desc-event h5 {
+  font-size: 1.9em;
+}
+
+.event .desc-event p {
+  font-weight: bold;
+  font-size: 0.9em;
+  line-height: 1px;
+}
+
+.event .desc-event span {
+  float: right;
+  color: #444;
+  font-size: 1.1em;
+}
+
+.event .desc-event .btn-event {
+  background: #000;
+  color: #fff;
+  border-radius: 1;
+  width: 150px;
+}
+
+.event .desc-event .btn-event:hover {
+  background: #f16876;
+}
+
+.desc-event-mini {
+  padding: 5px;
+}
+
+.desc-event-mini h5 {
+  font-size: 1.3em;
+}
+
+.desc-event-mini p {
+  font-weight: bold;
+  font-size: 0.8em;
+  line-height: 1px;
+}
+
+.desc-event-mini span {
+  float: right;
+  color: #444;
+  font-size: 0.9em;
+}
+
+.desc-event-mini .btn-event {
+  background: #000;
+  color: #fff;
+  border-radius: 1;
+  width: 100px;
+}
+
+.desc-event-mini .btn-event:hover {
+  background: #f16876;
+}
+
+footer {
+  margin-top: 100px;
+}
+
+footer hr {
+  border: 1px solid #eee;
+}
+
+footer h6 {
+  font-weight: bold;
+}
+
+footer ul {
+  list-style-type: none;
+  margin-left: -35px;
+}
+
+footer ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  color: #f16876;
+}
+
+footer .credit a {
+  color: #000;
+}
+
+footer .credit a:hover {
+  color: #f16876;
+}
+
+footer .credit i {
+  margin-left: 9px;
+  font-size: 1.2em;
+}
+
+footer .credit img {
+  width: 70px;
+  display: inline;
+}
+
+footer .credit p {
+  display: inline;
+  margin-left: 3px;
 }
 /*# sourceMappingURL=style.css.map */
