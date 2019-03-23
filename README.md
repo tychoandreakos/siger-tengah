@@ -46,6 +46,7 @@ Berikut desain mockup dari siger tengah :
 5. [Navbar Animation](http://www.menucool.com/ui/animated-sticky-header-on-scroll)
 6. [BackTop Arrow](http://www.menucool.com/ui/back-to-top-arrow)
 7. [Dropdown Animation](https://codepen.io/indaFaust/pen/awGpQW)
+8. [Slider Youtube Style](https://codepen.io/khadkamhn/pen/RxVKXP)
 
 ### Reference
 
