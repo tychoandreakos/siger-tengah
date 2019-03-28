@@ -41,12 +41,11 @@ Berikut desain mockup dari siger tengah :
 ### Dependency Component
 1. [SlideShow](https://bootsnipp.com/snippets/X0Qdv)
 2. [Thumbnail Image](https://bootsnipp.com/snippets/0ej)
-3. [Owl Carousel Slider](https://codepen.io/glebkema/pen/GqbWYd)
-4. [Love Button](https://codepen.io/kuus/pen/sqGBd)
+3. [Owl Carousel Slider](https://codepen.io/Nelis/pen/reEjZz)
+4. [Love Button](https://codepen.io/kieranfivestars/pen/PwzjgN)
 5. [Navbar Animation](http://www.menucool.com/ui/animated-sticky-header-on-scroll)
 6. [BackTop Arrow](http://www.menucool.com/ui/back-to-top-arrow)
 7. [Dropdown Animation](https://codepen.io/indaFaust/pen/awGpQW)
-8. [Slider Youtube Style](https://codepen.io/khadkamhn/pen/RxVKXP)
 
 ### Reference
 

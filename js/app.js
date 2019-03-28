@@ -1,39 +1,7 @@
 
-  $(function(){
-    $('.mhn-slide').owlCarousel({
-      loop:true,
-    margin:10,
-    navigation:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:5
-        }
-    },
-      smartSpeed:70,
-      'initialized.owl.carousel':function(e){
-        $(e.target).find('img').each(function(){
-          if(this.complete){
-            $(this).closest('.mhn-inner').find('.loader-circle').hide();
-            $(this).closest('.mhn-inner').find('.mhn-img').css('background-image','url('+$(e.target).attr('src')+')');
-          }else{
-            $(this).bind('load',function(e){
-              $(e.target).closest('.mhn-inner').find('.loader-circle').hide();
-              $(e.target).closest('.mhn-inner').find('.mhn-img').css('background-image','url('+$(e.target).attr('src')+')');
-            });
-          }
-        });
-      },
-      navigationText:['<svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path></svg>','<svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>']
-    });
-  });
-$(document).ready(function() {
+  $(document).ready(function() {
   
+      // menu slider
     var slideStart;
   
     function startSlide() {
@@ -145,42 +113,42 @@ $(document).ready(function() {
     parallaxX();
     siteNav();
 
-
     
   });
 
-  $(document).ready(function() {
- 
-    $(".owl-slider").owlCarousel({
-        navigation : true,
-        pagination: false,
-        margin: 10,
-        autoWidth:true,
-        animateOut: 'slideOutDown',
-    animateIn: 'flipInX',
-    stagePadding:30,
-    smartSpeed:450,
-        navigationText : ['<span class="fa-stack"><i class="fa fa-circle fa-stack-1x"></i><i class="fa fa-chevron-circle-left fa-stack-1x fa-inverse"></i></span>','<span class="fa-stack"><i class="fa fa-circle fa-stack-1x"></i><i class="fa fa-chevron-circle-right fa-stack-1x fa-inverse"></i></span>'],
+  $(function() {
+    $( ".love-button i" ).click(function() {
+      var $this = $(this);
+      $this.find( ".love-button i,span" );
+      $this.toggleClass( "press", 1000 );
     });
-    
   });
 
-  // $('.owl-link').on('mouseover', function(){
-  //   $('.button-love').css('display', 'block')
-  // })
 
-  // $('.owl-link').on('mouseleave', function(){
-  //   $('.button-love').css('display', 'none')
-  // })
+  // owl carousel
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+      margin: 10,
+      nav    : true,
+      smartSpeed :900,
+      // center: true,
+    //  autoWidth:true,
+     navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 3
+      },
+      1000: {
+        items: 5
+      }
+    }
+  })
 
-  
 
-  $('.button-love').click(function(){
-    var $this = $(this);
-    $this.find('.button-love-heart').toggleClass('loving')
-    $this.toggleClass('loved');
-  });
-
+  // menu more
   class Dropdown {
     constructor() {
       this.btn = document.querySelector('.dropdown-btn');
