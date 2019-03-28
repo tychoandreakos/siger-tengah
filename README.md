@@ -67,5 +67,5 @@ Berdasarkan hasil analisis nantinya poin yang akan dibahas adalah berdasarkan 5 
 
 ![Desain Landing Page Siger Tengah](images/documentation/Screenshot_2019-03-28&#32;Wilujeung&#32;Siger&#32;Tengah.png)
 
-<center>Tampilan Landing Page Siger Tengah</center>
+<p align="center">Tampilan Landing Page Siger Tengah</p>
 
