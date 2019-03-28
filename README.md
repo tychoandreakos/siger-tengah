@@ -9,14 +9,6 @@ Berikut desain mockup dari siger tengah :
 
 ![Desain Landing Page Siger Tengah](images/screen.png)
 
-### Analisis Design Siger Tengah
-Berdasarkan hasil analisis nantinya poin yang akan dibahas adalah berdasarkan 5 atribut, Berikut atribut yang akan dibahas:
-1. Textual Content
-2. Graphic Design
-3. Navigation
-4. Structure
-5. Link
-
 ### Tool yang digunakan :
 
 1. [Visual Studio Code](https://code.visualstudio.com/)
@@ -61,4 +53,18 @@ Berdasarkan hasil analisis nantinya poin yang akan dibahas adalah berdasarkan 5 
 * [Bootsnipp](https://bootsnip.com)
 * [Balelang](https://balelang.com)
 * [Menucool](http://www.menucool.com)
+
+
+### Analisis Design Siger Tengah
+Berdasarkan hasil analisis nantinya poin yang akan dibahas adalah berdasarkan 5 atribut, Berikut atribut yang akan dibahas:
+- [x] Textual Content
+- [x] Graphic Design
+- [x] Navigation
+- [x] Structure
+- [x] Link
+
+
+![Desain Landing Page Siger Tengah](images/documentation/Screenshot_2019-03-28&#32;Wilujeung&#32;Siger&#32;Tengah.png)
+
+<center>Tampilan Landing Page Siger Tengah</center>
 
