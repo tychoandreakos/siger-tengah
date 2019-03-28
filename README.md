@@ -53,9 +53,10 @@ Berikut desain mockup dari siger tengah :
 * [Bootsnipp](https://bootsnip.com)
 * [Balelang](https://balelang.com)
 * [Menucool](http://www.menucool.com)
+  
 
 
-### Analisis Design Siger Tengah
+# Analisis Design Siger Tengah
 Berdasarkan hasil analisis nantinya poin yang akan dibahas adalah berdasarkan 5 atribut, Berikut atribut yang akan dibahas:
 - [x] Textual Content
 - [x] Graphic Design
